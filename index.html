@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", "Segoe UI", sans-serif;
+            background: #f9fafc;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        header p {
+            font-size: 1rem;
+            color: #555;
+            margin-top: 0.5rem;
+        }
+
+        /* Layout */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Card */
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 1.8rem;
+            border: 1px solid #eee;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-6px) scale(1.01);
+            box-shadow: 0 10px 28px rgba(0, 123, 255, 0.15);
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.6rem;
+            color: #0077ff;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 1.2rem;
+        }
+
+        /* Links */
+        .links {
+            display: flex;
+            gap: 0.7rem;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            text-decoration: none;
+            background: #0077ff;
+            color: white;
+            padding: 0.55rem 1.2rem;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .links a:hover {
+            background: #005fcc;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> My Practice Projects</h1>
+        <p>Kumpulan project latihan saya dengan desain modern & interaktif.</p>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2>Simple Financial Tracker</h2>
+            <p>Aplikasi untuk mencatat pemasukan dan pengeluaran harian.</p>
+            <div class="links">
+                <a href="https://my-financetracker.netlify.app/" target="_blank">🌐 Demo</a>
+                <a href="https://github.com/zann06" target="_blank">💻 GitHub</a>
+            </div>
+        </div>
+
+</body>
+
+</html>
